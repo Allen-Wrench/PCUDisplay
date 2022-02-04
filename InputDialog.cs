@@ -43,7 +43,7 @@ namespace PCUDisplay
 
 		public override void HandleInput(bool receivedFocusInThisUpdate)
 		{
-			HandleInput(receivedFocusInThisUpdate);
+			base.HandleInput(receivedFocusInThisUpdate);
 			if (receivedFocusInThisUpdate)
 			{
 				return;
@@ -91,7 +91,7 @@ namespace PCUDisplay
 
 		public override void RecreateControls(bool constructor)
 		{
-			RecreateControls(constructor);
+			base.RecreateControls(constructor);
 			AddCaption(caption, new Vector4?(Color.White.ToVector4()), new Vector2?(new Vector2(0f, 0.003f)), 0.8f);
 			MyGuiControlSeparatorList myGuiControlSeparatorList = new MyGuiControlSeparatorList();
 			myGuiControlSeparatorList.AddHorizontal(new Vector2(0f, 0f) - new Vector2(m_size.Value.X * 0.78f / 2f, m_size.Value.Y / 2f - 0.075f), m_size.Value.X * 0.78f, 0f, null);
