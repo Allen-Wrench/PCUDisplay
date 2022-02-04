@@ -23,10 +23,6 @@ namespace PCUDisplay
 			this.callBack = callBack;
 			this.defaultValue = defaultValue;
 			RecreateControls(true);
-			OnEnterCallback = delegate ()
-			{
-				OnOk(okButton);
-			};
 			CanBeHidden = true;
 			CanHideOthers = true;
 			CloseButtonEnabled = true;
